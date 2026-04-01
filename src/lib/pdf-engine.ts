@@ -11,8 +11,9 @@ let cachedFont: ArrayBuffer | null = null;
 
 async function loadKoreanFont(): Promise<ArrayBuffer> {
   if (cachedFont) return cachedFont;
+  // pdf-lib는 woff2를 지원하지 않음 — OTF 사용
   const res = await fetch(
-    "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2"
+    "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/public/static/Pretendard-Regular.otf"
   );
   cachedFont = await res.arrayBuffer();
   return cachedFont;
