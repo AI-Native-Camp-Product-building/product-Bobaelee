@@ -11,9 +11,10 @@ let cachedFont: ArrayBuffer | null = null;
 
 async function loadKoreanFont(): Promise<ArrayBuffer> {
   if (cachedFont) return cachedFont;
-  // pdf-lib는 woff2를 지원하지 않음 — OTF 사용
+  // pdf-lib는 TTF만 안정적으로 지원 (OTF CFF 글리프 파싱 에러 발생)
+  // Spoqa Han Sans Neo TTF 사용
   const res = await fetch(
-    "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/public/static/Pretendard-Regular.otf"
+    "https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf"
   );
   cachedFont = await res.arrayBuffer();
   return cachedFont;
