@@ -1,0 +1,22 @@
+[
+  {
+    "sido": "서울특별시",
+    "sigungu": "강남구",
+    "offices": [
+      { "institution": "국민연금", "officeName": "강남지사", "address": "서울특별시 강남구 테헤란로 114", "phone": "02-2176-8451", "fax": "02-2176-8499" },
+      { "institution": "건강보험", "officeName": "강남지사", "address": "서울특별시 강남구 테헤란로 131", "phone": "02-3459-9000", "fax": "02-3459-9199" },
+      { "institution": "고용보험", "officeName": "강남고용센터", "address": "서울특별시 강남구 삼성로 512", "phone": "02-3468-4601", "fax": "02-3468-4699" },
+      { "institution": "산재보험", "officeName": "서울강남지사", "address": "서울특별시 강남구 테헤란로 305", "phone": "02-3466-8801", "fax": "02-3466-8899" }
+    ]
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "서초구",
+    "offices": [
+      { "institution": "국민연금", "officeName": "서초지사", "address": "서울특별시 서초구 서초대로 396", "phone": "02-2176-8551", "fax": "02-2176-8599" },
+      { "institution": "건강보험", "officeName": "서초지사", "address": "서울특별시 서초구 반포대로 217", "phone": "02-3459-9100", "fax": "02-3459-9299" },
+      { "institution": "고용보험", "officeName": "강남고용센터", "address": "서울특별시 강남구 삼성로 512", "phone": "02-3468-4601", "fax": "02-3468-4699" },
+      { "institution": "산재보험", "officeName": "서울강남지사", "address": "서울특별시 강남구 테헤란로 305", "phone": "02-3466-8801", "fax": "02-3466-8899" }
+    ]
+  }
+]
