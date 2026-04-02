@@ -44,6 +44,7 @@ export interface AcquisitionReport {
     employment: boolean;
     industrial: boolean;
   };
+  dependents?: Dependent[]; // 피부양자 목록 (건강보험)
 }
 
 // 상실 신고
@@ -64,6 +65,18 @@ export interface LossReport {
   employmentPrevSalary?: number;
   industrialCurrentSalary: number;
   industrialPrevSalary?: number;
+}
+
+// 피부양자 정보 (건강보험)
+export interface Dependent {
+  relation: string; // 가입자와의 관계 (배우자, 부, 모, 자녀 등)
+  name: string;
+  residentNumber: string;
+  disabilityCode?: string; // 장애인 종별부호
+  disabilityRegDate?: string; // 등록일 YYYY.MM.DD
+  nationality?: string; // 외국인만
+  visaStatus?: string; // 외국인만
+  visaPeriod?: string; // 체류기간
 }
 
 export type Report = AcquisitionReport | LossReport;
